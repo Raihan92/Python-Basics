@@ -1,0 +1,10 @@
+#Tuple Example
+
+sm_tuple = (1,2,"One")
+print(sm_tuple)
+#Output
+(1, 2, 'One')
+
+print(sm_tuple.index("One"))
+#Output
+2
