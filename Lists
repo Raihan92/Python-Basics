@@ -1,0 +1,25 @@
+#Lists Examples
+
+mixed_list = ['one', 'two', 'three', 1, 2]
+print(mixed_list)
+#Output
+['one', 'two', 'three', 1, 2]
+
+len(mixed_list)
+#Output
+5
+
+mixed_list.append(3)
+mixed_list.pop(2)
+print(mixed_list)
+#Output
+['one', 'two', 1, 2, 3]
+
+mixed_list_2 = [4, 5]
+print(mixed_list + mixed_list_2)
+#Output
+['one', 'two', 1, 2, 3, 4, 5]
+
+print(mixed_list * 2)
+#Output
+['one', 'two', 1, 2, 3, 'one', 'two', 1, 2, 3]
