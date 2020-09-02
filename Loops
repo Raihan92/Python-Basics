@@ -1,0 +1,36 @@
+#For Loop
+
+x_list = [1,2,3,4,5,6,7,8,9,10]
+target = 7
+found = False
+for num in x_list:
+    if num == target:
+        print("Found in the list {}".format(target))
+        found = True
+        break
+if found == False:
+    print("Couldn't find the target number {} in the list".format(target))
+
+#While while loop
+
+x_list = [1,2,3,4,5,6,7,8,9,10]
+target = 11
+found = False
+i = 0
+while i < len(x_list):
+    if x_list[i] != target:
+        pass
+    else:
+        found = True
+        print("Found in the list {}".format(target))
+        found = True
+        break
+    i += 1
+if found == False:
+    print("Couldn't find the target number {} in the list".format(target))
+
+#Nested For loop
+
+for i in range(5):
+    for j in range(5):
+        print("I = {} J = {}".format(i,j))
