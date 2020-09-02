@@ -1,0 +1,12 @@
+#Dictionary Examples
+
+price_dictionary = {'apple':140, 'mango':150, 'grape':200}
+price_dictionary['apple'] = 130
+print(price_dictionary)
+
+#Output
+{'apple':140, 'mango':150, 'grape':200}
+
+price_dictionary['grape'] = {'black':230, 'green':210}
+print(price_dictionary)
+{'apple': 130, 'mango': 150, 'grape': {'black': 230, 'green': 210}}
