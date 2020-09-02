@@ -1,0 +1,6 @@
+#Set Examples
+
+x_set = set([1,1,2,1,2,2,3,3,3,1,3,4])
+print(x_set)
+#Output
+{1, 2, 3, 4}
