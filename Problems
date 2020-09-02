@@ -1,0 +1,26 @@
+#Problem 1: Return the sum of the numbers in the list, except ignore sections of numbers in the range starting with a 6 and extending to the next 9. Return 0 for no numbers. The length of the array will not exceed 1000. Note: every 6 will be followed by at least one 9.
+
+Sample Input 1: [2, 1, 6, 9, 11, 1, 6, 8, 9, 4]
+Sample Output 1: 19
+Sample Input 2: [2, 1, 6, 7, 9, 11]
+Sample Output 2: 14
+
+#Problem 2: Return all the prime numbers for a given number. Say, the number is n and prime numbers of n are p. Then the prime numbers should follow 1 <= p <= n. The value of n is 1<= n <= 1000000
+
+Sample Input 1: 20
+Sample Output 1: [2, 3, 5, 7, 11, 13, 17, 19]
+
+#Problem 3: You are given three integers x, y and z representing the dimensions of a cuboid along with an integer. Return a list of all possible coordinates given by (i,j,k) on a 3D grid where the sum of i+j+k is not equal to n. Here, 0 <= i <= x, 0 <= j <= y and 0 <= k <= z. Please use list comprehensions rather than multiple loops, as a learning exercise.
+
+Sample Input 1: 1 1 1 2
+Sample Output 1: [[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]
+
+#Problem 4: Return all unique numbers from a given list. Please use a dictionary rather than set as a learning exercise.
+
+Sample Input 1: [1,1,2,1,2,2,3,3,3,1,3,4]
+Sample Output 1: [1, 2, 3, 4]
+
+#Problem 5: Return the most expensive car and it’s price as a tuple from the given arbitrary number of arguments.
+
+Sample Input 1: ('toyota',1000),('suzuki',950),('honda',1100),('bmw',8000)
+Sample Output 1: ('bmw', 8000)
