@@ -1,0 +1,98 @@
+#Solution for problem 1:
+
+def summer_69(arr):
+    start = 6
+    st6 = 0
+    end = 9
+    ed9 = 0
+    for i in range(len(arr)):
+        if arr[i] == start:
+            st6 = i
+            while arr[i] != end:
+                i+=1
+            ed9 = i+1
+            arr[st6:ed9] = [0 for x in arr[st6:ed9]]
+    return sum(arr)
+
+
+#Solution for problem 2:
+
+Using for loop
+
+import math
+
+def prime_generator(n):
+    ret = []
+    for num in range(1, n+1, 1):
+        if num == 1:
+            pass
+        else:
+            not_prime = False
+            for i in range(2, int(math.sqrt(num))+1, 1):
+                if num % i == 0:
+                    not_prime = True
+                    break
+                i += 1
+            if not_prime == False:
+                ret.append(num)
+    return ret
+
+Using while loop
+
+import math
+
+def prime_generator(n):
+    num = 1
+    ret = []
+    while num <= n:
+        if num > 1:
+            not_prime = False
+            for i in range(2, int(math.sqrt(num))+1, 1):
+                if num % i == 0:
+                    not_prime = True
+                    break
+                i += 1
+            if not_prime == False:
+                ret.append(num)
+        num += 1
+    return ret
+
+#Solution for problem 3:
+
+def list_comprehension():
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    ret = [[i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if sum([i,j,k]) != n]
+    return ret
+
+#Solution for problem 4:
+
+def unique_list(arr):
+    col = {}
+    for x in arr:
+        col[x] = False
+        
+    unq_list = []
+    for x in arr:
+        if col[x] == False:
+            unq_list.append(x)
+        col[x] = True
+
+    return unq_list
+
+#Solution for problem 5:
+
+def most_expensive_car(*arr):
+    car = ""
+    h_price = 0
+    
+    for c_name,price in arr:
+        if price > h_price:
+            car = c_name
+            h_price = price
+        else:
+            pass
+    
+    return (car,h_price)
